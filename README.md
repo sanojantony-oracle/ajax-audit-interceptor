@@ -1,4 +1,4 @@
-ajax-interceptor
+ajax-audit-interceptor
 ================
 
 This permits to wire some request and response hooks on any Ajax calls.
@@ -10,16 +10,13 @@ Install
 
 Install it!
 ```
-npm install ajax-interceptor --save
+npm install ajax-audit-interceptor --save
 ```
 
 Use it! (with **Browserify**)
 ```javascript
-var AjaxInterceptor = require("ajax-interceptor");
+var AjaxAuditInterceptor = require("ajax-audit-interceptor");
 ```
-
-No other support for now, but feel free to contribute.
-
 
 API
 ===============
@@ -45,19 +42,7 @@ AjaxInterceptor.unwire();
 
 You can add and remove callbacks dynamically while the interceptor is wired.
 
-
-
-Alternatives
-===================
-
-If you just want to be able to intercept JQuery $.ajax() calls, [Global Ajax Event Handlers](http://api.jquery.com/category/ajax/global-ajax-event-handlers/) also work.
-
 License
 ===================
 
 MIT
-
-# Hire a freelance expert
-
-Looking for a React/ReactNative freelance expert with more than 5 years production experience?
-Contact me from my [website](https://sebastienlorber.com/) or with [Twitter](https://twitter.com/sebastienlorber).
